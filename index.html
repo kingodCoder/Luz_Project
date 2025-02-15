@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Vitrine - Luz' Collection</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lightbox CSS via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-light" href="index.html">Luz' Collection</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-5 bg-light">
+    <div class="container">
+      <h1 class="display-4">Découvrez l'univers créatif de Luz' Regina.</h1>
+      <p class="lead">
+        Des créations uniques et originales, faites avec passion.
+      </p>
+      <a href="gallery.html" class="btn btn-primary btn-lg">Voir la galerie</a>
+    </div>
+  </section>
+
+  <!-- Section Présentation -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Passionnée par le perlage, je crée des pièces uniques qui reflètent
+            mon amour pour les perles. Chaque création est le fruit d'un travail
+            minutieux et d'une attention particulière aux détails.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/luz1.jpg" alt="Photo de Regina" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Call-to-Action -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h2>Découvrez mes créations</h2>
+      <!-- Section Galerie -->
+      <div class="row py-3 g-3 bg-light">
+        <!-- Produit 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/produit4.jpg" data-lightbox="produits"
+              data-title="Produit 4 - Tableau abstrait">
+              <img src="images/produit4.jpg" class="card-img-top" alt="Produit 4">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Sac perlé rose</h5>
+              <p class="card-text">
+                C'est ma plus belle création.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Produit 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/produit5.jpg" data-lightbox="produits"
+              data-title="Produit 5 - Tableau abstrait">
+              <img src="images/produit5.jpg" class="card-img-top" alt="Produit 5">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Sac perlé blanc</h5>
+              <p class="card-text">
+                Un produit sans pareil.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Produit 7 -->
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/produit7.jpg" data-lightbox="produits"
+              data-title="Produit 7 - Tableau abstrait">
+              <img src="images/produit7.jpg" class="card-img-top" alt="Produit 7">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Bracelet en perle</h5>
+              <p class="card-text">
+                Plus que de l'art.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="gallery.html" class="btn btn-secondary btn-lg">Voir la galerie</a>
+      <!--<div class="row">
+                                                                                          </div>-->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-primary text-light text-center">
+    <div class="container">
+      <p class="mb-0">
+        © 2025 Luz' Collection. Tous droits réservés.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS et jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lightbox JS via CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+</body>
+</html>
