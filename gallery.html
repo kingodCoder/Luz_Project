@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y050F5Y6S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9Y050F5Y6S');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galerie - Luz' Collection</title>
@@ -12,12 +23,15 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar (identique à l'index) -->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
-      <a class="navbar-brand fw-bold text-light" href="index.html">Luz' Collection</a>
+      <a class="navbar-brand fw-bold text-light span" href="index.html">Luz' Collection</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,7 +57,7 @@
   <!-- Section Galerie -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-5">Mes créations</h2>
+      <h2 class="text-center mb-5" data-aos='fade-right'>Mes créations</h2>
       <div class="row">
         <!-- Produit 1 -->
         <div class="col-md-4 mb-4">
@@ -53,7 +67,7 @@
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 1</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Une création unique en résine, inspirée par les formes organiques de la nature.
               </p>
             </div>
@@ -68,7 +82,7 @@
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 2</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Une sculpture en bois, alliant modernité et tradition.
               </p>
             </div>
@@ -83,7 +97,7 @@
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 3</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Un tableau abstrait, explorant les contrastes et les émotions.
               </p>
             </div>
@@ -98,7 +112,7 @@
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 4</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Un tableau abstrait, explorant les contrastes et les émotions.
               </p>
             </div>
@@ -108,12 +122,12 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <a href="images/produit5.jpg" data-lightbox="produits"
-            data-title="Produit 5 - Tableau abstrait">
+              data-title="Produit 5 - Tableau abstrait">
               <img src="images/produit5.jpg" class="card-img-top" alt="Produit 5">
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 5</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Un tableau abstrait, explorant les contrastes et les émotions.
               </p>
             </div>
@@ -123,12 +137,12 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <a href="images/produit6.jpg" data-lightbox="produits"
-            data-title="Produit 6 - Tableau abstrait">
+              data-title="Produit 6 - Tableau abstrait">
               <img src="images/produit6.jpg" class="card-img-top" alt="Produit 6">
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 6</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Un tableau abstrait, explorant les contrastes et les émotions.
               </p>
             </div>
@@ -138,12 +152,12 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <a href="images/produit7.jpg" data-lightbox="produits"
-            data-title="Produit 7 - Tableau abstrait">
+              data-title="Produit 7 - Tableau abstrait">
               <img src="images/produit7.jpg" class="card-img-top" alt="Produit 7">
             </a>
             <div class="card-body">
               <h5 class="card-title">Produit 7</h5>
-              <p class="card-text">
+              <p class="card-text" data-aos='fade-in'>
                 Un tableau abstrait, explorant les contrastes et les émotions.
               </p>
             </div>
@@ -157,15 +171,26 @@
   <footer class="py-4 bg-primary text-light text-center">
     <div class="container">
       <p class="mb-0">
-        © 2025 Luz' Collection. Tous droits réservés.
+        © 2025 <strong><span class="span text-light">Luz'
+          Collection</span></strong>. Tous droits réservés.
+      </p>
+      <p class="mb-0">
+        Designed by
+        <i class="fas fa-arrow-right"></i>
+        <a href="#" class="text-danger text-decoration-none">Mbmos</a>
+        <i class="fas fa-arrow-left"></i>
       </p>
     </div>
   </footer>
 
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <!-- Bootstrap JS et jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Lightbox JS via CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <!-- Custom Js -->
+  <script src="./js/script.js"></script>
 </body>
 </html>

@@ -3,7 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Vitrine - Luz' Collection</title>
+  <meta name="description" content="Découvrez les créations uniques de Luz,
+  artiste passionnée par perlage. Explorez la galerie et contactez-nous pour plus
+  d'informations.">
+  <meta name="keywords" content="Luz, créations, art, perlage, galerie">
+  <meta name="author" content="Luz Collection">
+  <title>Luz Collection - Créations uniques et originales</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y050F5Y6S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9Y050F5Y6S');
+  </script>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Lightbox CSS via CDN -->
@@ -11,13 +27,23 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap&"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
-      <a class="navbar-brand fw-bold text-light" href="index.html">Luz' Collection</a>
+      <a class="navbar-brand fw-bold text-light span" href="index.html">Luz' Collection</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,11 +69,11 @@
   <!-- Hero Section -->
   <section class="hero-section text-center py-5 bg-light hero-image">
     <div class="container">
-      <h1 class="display-4 text-light">Découvrez l'univers créatif de Luz' Regina.</h1>
-      <p class="lead">
-        Des créations uniques et originales, faites avec passion.
+      <h1 class="display-4 text-light">Des créations uniques, pour des moments inoubliables</h1>
+      <p class="lead text-light">
+        Chaque pièce est une histoire, une émotion, un morceau de mon univers. Découvrez des bijoux et sacs en perles qui racontent votre style.
       </p>
-      <a href="gallery.html" class="btn btn-primary btn-lg">Voir la galerie</a>
+      <a href="gallery.html" class="btn btn-primary btn-lg">Voir la galerie <i class="fas fa-arrow-right"></i></a>
     </div>
   </section>
 
@@ -56,8 +82,8 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h2>Qui suis-je ?</h2>
-          <p>
+          <h2 data-aos='fade-left'>Qui suis-je ?</h2>
+          <p data-aos='fade-right'>
             Passionnée par le perlage, je crée des pièces uniques qui reflètent
             mon amour pour les perles. Chaque création est le fruit d'un travail
             minutieux et d'une attention particulière aux détails.
@@ -73,12 +99,12 @@
   <!-- Section Call-to-Action -->
   <section class="py-5 bg-light text-center">
     <div class="container">
-      <h2>Découvrez mes créations</h2>
+      <h2 data-aos='fade-up'>Découvrez mes créations</h2>
       <!-- Section Galerie -->
       <div class="row py-3 g-3 bg-light">
         <!-- Produit 4 -->
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos='fade-right'>
             <a href="images/produit4.jpg" data-lightbox="produits"
               data-title="Produit 4 - Tableau abstrait">
               <img src="images/produit4.jpg" class="card-img-top" alt="Produit 4">
@@ -93,7 +119,7 @@
         </div>
         <!-- Produit 5 -->
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos='fade-left'>
             <a href="images/produit5.jpg" data-lightbox="produits"
               data-title="Produit 5 - Tableau abstrait">
               <img src="images/produit5.jpg" class="card-img-top" alt="Produit 5">
@@ -108,7 +134,7 @@
         </div>
         <!-- Produit 7 -->
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos='fade-right'>
             <a href="images/produit7.jpg" data-lightbox="produits"
               data-title="Produit 7 - Tableau abstrait">
               <img src="images/produit7.jpg" class="card-img-top" alt="Produit 7">
@@ -122,9 +148,306 @@
           </div>
         </div>
       </div>
-      <a href="gallery.html" class="btn btn-secondary btn-lg">Voir la galerie</a>
-      <!--<div class="row">
-                                                                                                                  </div>-->
+      <a href="gallery.html" class="btn btn-primary btn-lg" data-aos='fade-in'>Découvrez des pièces
+        uniques qui vous ressemblent <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="testimonials bg-light">
+
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Ce qu'ils disent de moi</h2>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              </p>
+              <div class="profile mt-auto">
+                <img src="./images/luz1.jpg" class="testimonial-img wh-100px" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              </p>
+              <div class="profile mt-auto">
+                <img src="./images/luz2.jpg" class="testimonial-img wh-100px" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              </p>
+              <div class="profile mt-auto">
+                <img src="./images/luz3.jpg" class="testimonial-img wh-100px" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              </p>
+              <div class="profile mt-auto">
+                <img src="./images/luz4.jpg" class="testimonial-img wh-100px" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              </p>
+              <div class="profile mt-auto">
+                <img src="./images/luz8.jpg" class="testimonial-img wh-100px" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Processus de création -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos='fade-bottom'>Mon processus de création</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="mb-3">
+            <i class="fas fa-lightbulb fa-3x text-primary"></i>
+          </div>
+          <h3 data-aos='fade-left'>Inspiration</h3>
+          <p data-aos='fade-right'>
+            Je m'inspire de la nature, des couleurs et des émotions pour créer des designs uniques.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="mb-3">
+            <i class="fas fa-pencil-ruler fa-3x text-primary"></i>
+          </div>
+          <h3 data-aos='fade-right'>Conception</h3>
+          <p data-aos='fade-left'>
+            Chaque pièce est dessinée et planifiée avec soin pour garantir qualité et originalité.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="mb-3">
+            <i class="fas fa-hands fa-3x text-primary"></i>
+          </div>
+          <h3 data-aos='fade-left'>Réalisation</h3>
+          <p data-aos='fade-right'>
+            Je crée chaque pièce à la main, en utilisant des matériaux de haute qualité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions fréquentes -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos='fade-bottom'>Questions fréquentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Combien de temps prend la livraison ?
+            </button>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              La livraison prend généralement 5 à 7 jours ouvrés.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Puis-je personnaliser une commande ?
+            </button>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Oui, contactez-moi pour discuter de vos idées de personnalisation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dernières actualités -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos='fade-bottom'>Dernières actualités</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card" data-aos='fade-up'>
+            <img src="images/luz3.jpg" class="card-img-top" alt="Article 1">
+            <div class="card-body">
+              <h5 class="card-title">Les tendances perles 2024</h5>
+              <p class="card-text">
+                Découvrez les dernières tendances en matière de bijoux et sacs en perles.
+              </p>
+              <a href="#" class="btn btn-primary">Lire plus...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" data-aos='fade-up'>
+            <img src="images/luz2.jpg" class="card-img-top" alt="Article 2">
+            <div class="card-body">
+              <h5 class="card-title">Comment entretenir vos bijoux</h5>
+              <p class="card-text">
+                Conseils pratiques pour garder vos créations en perles comme neuves.
+              </p>
+              <a href="#" class="btn btn-primary">Lire plus...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" data-aos='fade-up'>
+            <img src="images/luz1.jpg" class="card-img-top" alt="Article 3">
+            <div class="card-body">
+              <h5 class="card-title">L'histoire derrière chaque création</h5>
+              <p class="card-text">
+                Découvrez l'inspiration derrière mes dernières pièces.
+              </p>
+              <a href="#" class="btn btn-primary">Lire plus...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4" data-aos='fade-bottom'>Restez informé</h2>
+      <p class="mb-4">
+        Abonnez-vous à ma newsletter pour recevoir des offres exclusives et des mises à jour.
+      </p>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control w-50 me-2" placeholder="Votre email" required>
+        <button type="submit" class="btn btn-primary">S'abonner</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Collaborations -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos='fade-bottom'>Collaborations</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="images/luz6.png" alt="Partenaire 3" class="img-fluid mb-3
+          wh-100px rounded-circle">
+          <p>
+            Collection exclusive avec Kingodcode Corp.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Évènements à venir -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos='fade-bottom'>Événements à venir</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card" data-aos='fade-up'>
+            <img src="images/luz4.jpg" class="card-img-top" alt="Événement 1">
+            <div class="card-body">
+              <h5 class="card-title">Exposition à Kisangani</h5>
+              <p class="card-text">
+                Venez découvrir mes dernières créations le 15 novembre 2024.
+              </p>
+              <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" data-aos='fade-up'>
+            <img src="images/luz2.jpg" class="card-img-top" alt="Événement 2">
+            <div class="card-body">
+              <h5 class="card-title">Atelier de perlage</h5>
+              <p class="card-text">
+                Apprenez à créer vos propres bijoux lors de mon atelier le 20 décembre 2024.
+              </p>
+              <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie Vidéos -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos='fade-bottom'>Galerie vidéo</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9" data-aos='fade-left'>
+            <iframe class="rounded" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="rounded ratio ratio-16x9" data-aos'fade-right'>
+            <iframe class="rounded" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -132,16 +455,28 @@
   <footer class="py-4 bg-primary text-light text-center">
     <div class="container">
       <p class="mb-0">
-        © 2025 Luz' Collection. Tous droits réservés.
+        &copy; 2025 <strong><span>Luz' Collection</span class="span text-light"></strong>. Tous droits réservés.
+      </p>
+      <p class="mb-0">
+        Designed by
+        <i class="fas fa-arrow-right"></i>
+        <a href="#" class="text-danger text-decoration-none">Mbmos</a>
+        <i class="fas fa-arrow-left"></i>
       </p>
     </div>
-  </footer>
-
-  <!-- Bootstrap JS et jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Lightbox JS via CDN -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  </div>
+</footer>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Bootstrap JS et jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Lightbox JS via CDN -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<!-- Custom Js -->
+<script src="./js/script.js"></script>
 </body>
 </html>
