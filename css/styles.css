@@ -77,10 +77,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .span {
-  font-family: 'Poppins','Nunito','Open Sans', sans-serif;
+  font-family: 'Lato','Poppins','Nunito','Open Sans', sans-serif;
   font-weight: bold;
   color: #444444;
 
+}
+
+.text-lato {
+  font-family: 'Poppins','Nunito','Open Sans', sans-serif;
+  background-color: #01ffff;
 }
 
 /* General */
@@ -97,9 +102,9 @@ section {
 
 /* Hero */
 .hero-image {
-  background: url('../images/luz8.jpg') fixed no-repeat;
+  background: url('../images/luz3.jpg') no-repeat;
   background-position: left top;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* Testimonies */
@@ -107,7 +112,7 @@ section {
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
   background: #fff;
   min-height: 320px;
   display: flex;
